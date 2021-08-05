@@ -12,4 +12,3 @@ PS.我金剛粉拉!
 **JavaScript**<br>
 ## 展示頁面
 ![](https://cdn.discordapp.com/attachments/726376206177665069/872948239505178654/127.0.0.1_5500_index.html_4.png)<br>
-![](https://cdn.discordapp.com/attachments/726376206177665069/872948237215092846/127.0.0.1_5500_index.htmlPixel_2_XL.png)
