@@ -1,15 +1,13 @@
 (function () {
+    // 載入 AOS
+    AOS.init();
+    // 載入parllax
+    let main = document.querySelector('#main')
+    let parallaxInstance = new Parallax(main);
+    document.documentElement.style.overflow='hidden';
     let header = document.querySelector('header');
-    let main = document.querySelector('.main');
-    let voteWrap = document.querySelector('.voteWrap');
-    let cardsWrap = document.querySelector('.cardsWrap');
-    let footer = document.querySelector('.footer');
     let loading = document.querySelector('.loading')
     header.classList.add('displayNone');
-    main.classList.add('displayNone');
-    cardsWrap.classList.add('displayNone');
-    voteWrap.classList.add('displayNone');
-    footer.classList.add('displayNone');
     window.addEventListener('load', function () {
         const imgID = document.querySelectorAll('img');
         let i = 0;
@@ -19,21 +17,13 @@
             img.addEventListener("load", () => {
                 i += 1;
                 if (imgID.length === i) {
+                    document.documentElement.style.overflow='auto';
                     console.log('圖片全部載入完成');
                     loading.classList.add('displayNone');
-                    main.classList.remove('displayNone');
-                    cardsWrap.classList.remove('displayNone');
-                    voteWrap.classList.remove('displayNone');
-                    footer.classList.remove('displayNone');
                     header.classList.remove('displayNone');
                 }
             });
         })
-        // 載入 AOS
-        AOS.init();
-        // 載入parllax
-        let main = document.querySelector('#main')
-        let parallaxInstance = new Parallax(main);
         //header 滾動顯示
         let timer = null;
         document.addEventListener('scroll', function () {
