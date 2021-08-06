@@ -1,5 +1,5 @@
 # ❗❗❗GODZILLA VS. KONG❗❗❗
-本次專案主要是練習用**Parallax.js**以及**AOS.js**<br>
+本次專案主要是練習用**Parallax.js**以及**AOS**<br>
 來練習網頁中的互動動畫<br>
 仿造一個哥吉拉大戰金剛的形象網站<br>
 PS.我金剛粉拉!
