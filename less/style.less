@@ -198,14 +198,15 @@ body {
         border-radius: 5px;
         background-color: rgba(0, 0, 0, 0.3);
         filter: brightness(0.9);
-        overflow: hidden;
         .info {
             position: relative;
             flex: 1;
             padding: 3%;
-            height: 100%;
             color: #fff;
-            overflow: hidden;
+            &:first-child {
+                height: 100%;
+                overflow: hidden;
+            }
             img {
                 position: absolute;
                 left: 50%;
@@ -218,7 +219,7 @@ body {
             }
             p {
                 font-family: 'Noto Sans TC', sans-serif;
-                font-size: 1.1vw;
+                font-size: 14px;
             }
         }
     }
@@ -230,17 +231,29 @@ body {
     height: 100px;
     background-color: #1e1e1e;
     text-align: center;
+    font-size: 12px;
+    text-decoration: none;
+}
+.loading {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    z-index: 999;
+    overflow: hidden;
+    img {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%,-50%);
+        width: 30vw;
+    }
 }
 @media  screen and (max-width:1000px) {
     .cardsWrap {
         .card {
             flex-direction: column;
             height: 600px;
-            .info {
-                p {
-                    font-size: 1.3vw;
-                }
-            }
         }
     }
 }
@@ -594,6 +607,120 @@ body {
         }
         .kong {
             right: -750px!important;
+        }
+    }
+}
+
+
+// ===================================================
+@media  screen and ( max-width:2100px) and (min-height:1100px){
+    .main {
+        .godzilla {
+            left: -250px!important;
+        }
+        .kong {
+            right: -250px!important;
+        }
+    }
+}
+@media  screen and ( max-width:1700px) and (min-height:1100px){
+    .main {
+        .godzilla {
+            left: -350px!important;
+        }
+        .kong {
+            right: -350px!important;
+        }
+    }
+}
+@media  screen and ( max-width:1500px) and (min-height:1100px){
+    .main {
+        .godzilla {
+            left: -450px!important;
+        }
+        .kong {
+            right: -450px!important;
+        }
+    }
+}
+@media  screen and ( max-width:1200px) and (min-height:1100px){
+    .main {
+        .godzilla {
+            left: -550px!important;
+        }
+        .kong {
+            right: -550px!important;
+        }
+    }
+}
+@media screen and ( max-width:1000px) and (min-height:1100px){
+    .main {
+        .godzilla {
+            left: -650px!important;
+        }
+        .kong {
+            right: -650px!important;
+        }
+    }
+}
+
+@media screen and ( max-width:800px) and (min-height:1100px){
+    .main {
+        .titleImg {
+            img {
+                width: 50vw;
+                position: absolute;
+                height: auto;
+                top: 30vh;
+                left: 28vw;
+            }
+        }
+        .godzilla {
+            left: -750px!important;
+        }
+        .kong {
+            right: -750px!important;
+        }
+    }
+}
+// ===================================================
+@media  screen and ( max-width:2300px) and (min-height:1300px){
+    .main {
+        .godzilla {
+            left: -450px!important;
+        }
+        .kong {
+            right: -450px!important;
+        }
+    }
+}
+@media  screen and ( max-width:2100px) and (min-height:1300px){
+    .main {
+        .godzilla {
+            left: -650px!important;
+        }
+        .kong {
+            right: -650px!important;
+        }
+    }
+}
+@media  screen and ( max-width:1700px) and (min-height:1300px){
+    .main {
+        .godzilla {
+            left: -850px!important;
+        }
+        .kong {
+            right: -850px!important;
+        }
+    }
+}
+@media  screen and ( max-width:1500px) and (min-height:1300px){
+    .main {
+        .godzilla {
+            left: -950px!important;
+        }
+        .kong {
+            right: -950px!important;
         }
     }
 }
